@@ -1,0 +1,37 @@
+name: Home
+version: 1.0.0
+main: pl.home.HomePlugin
+api-version: '1.21'
+author: Timi
+description: GUI Home system
+commands:
+  home:
+    description: Otwiera GUI home'ów
+    usage: /home
+    aliases: [homes]
+  sethome:
+    description: Ustawia home
+    usage: /sethome [nazwa]
+  delhome:
+    description: Usuwa home
+    usage: /delhome <nazwa>
+  homeadmin:
+    description: Administracyjne zarzadzanie home'ami
+    usage: /homeadmin <list|teleport|usun|wyczysc|ustaw>
+permissions:
+  home.use:
+    default: true
+  home.set:
+    default: true
+  home.bypass.limit:
+    default: op
+  home.limit.3:
+    default: false
+  home.limit.5:
+    default: false
+  home.limit.10:
+    default: false
+  home.limit.20:
+    default: false
+  home.admin:
+    default: op
